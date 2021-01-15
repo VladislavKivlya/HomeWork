@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule index([1-3])\.php$ $1.php
+RewriteRule dir index.php
+RewriteRule test([0-9])\.php$ index.php
+RewriteRule .+([0-9]).+\.php$ index.php
+RewriteRule !(.+)\.html index.php

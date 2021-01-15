@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule dir1 index1.php
+RewriteRule dir2 index2.php
+RewriteRule (.+)\.php index.php
+RewriteRule (.+)\.html$ $1.php

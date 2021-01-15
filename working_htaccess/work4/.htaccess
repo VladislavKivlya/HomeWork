@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.html$
+RewriteRule .+ index.php
+
+RewriteCond %{REQUEST_URI} ^content/+\.html$
+RewriteRule .+ index.php
+
+RewriteCond %{REQUEST_URI} \.css$ [OR]
+RewriteCond %{REQUEST_URI} ^styles/$
+RewriteRule .+ index.php

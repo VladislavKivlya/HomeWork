@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule (.+) index.php?get=$1
+RewriteRule test.php index.php [NC]
+
+
